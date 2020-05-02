@@ -2110,6 +2110,11 @@ chardet@^0.7.0:
   resolved "https://registry.npm.taobao.org/chardet/download/chardet-0.7.0.tgz#90094849f0937f2eedc2425d0d28a9e5f0cbad9e"
   integrity sha1-kAlISfCTfy7twkJdDSip5fDLrZ4=
 
+chartist-plugin-pointlabels@^0.0.6:
+  version "0.0.6"
+  resolved "http://nexus.zenvia.com/repository/npm-group/chartist-plugin-pointlabels/-/chartist-plugin-pointlabels-0.0.6.tgz#15414ff00a89886c4d5341540cac0396a549e205"
+  integrity sha512-DUemVUBWAN0qAHBUMXKKLrDCsUL1qWWwN+EfxN8gpftgXSheMiYeq83uHoHyp4X+W5Pz/aUWBf3N/HJwj+eRFw==
+
 chartist@^0.11.4:
   version "0.11.4"
   resolved "http://nexus.zenvia.com/repository/npm-group/chartist/-/chartist-0.11.4.tgz#e96e1c573d8b67478920a3a6ae52359d9fc8d8b7"

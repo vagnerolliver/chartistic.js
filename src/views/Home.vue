@@ -12,41 +12,26 @@
 
     <div class="content">
       <div class="column"></div>
-      <div class="column"><Chartist :data="data" :options="options" /></div>
+      <div class="column"><ChartistBar :config="config" /></div>
     </div>
   </div>
 </template>
 
 <script>
-import Chartist from '@/components/Chartist.vue';
+import ChartistBar from '@/components/ChartistBar.vue';
+import chartistBarConfig from '../config/chartistBar';
 
 export default {
   name: 'Home',
 
   data() {
     return {
-      data: {
-        labels: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-        series: [
-          [12, 9, 7, 8, 5],
-          [2, 1, 3.5, 7, 3],
-          [1, 3, 4, 5, 6],
-        ],
-      },
-      options: {
-        fullWidth: true,
-        chartPadding: {
-          right: 40,
-        },
-      },
+      config: chartistBarConfig(),
     };
   },
 
   components: {
-    Chartist,
-  },
-
-  mounted() {
+    ChartistBar,
   },
 };
 </script>

@@ -11,15 +11,23 @@ import Chartist from 'chartist';
 export default {
   name: 'Chartist',
 
-  props: ['data', 'options'],
+  props: ['config'],
 
   mounted() {
-    if (this.data && this.options) {
+    if (this.config) {
       // Reference to DOM Node where you will render chart using Chartist
-      const divNode = this.$refs.chartNode;
+      const { data = '', options = '' } = this.config;
+
+      const node = this.$refs.chartNode;
 
       // Example of drawing Line chart
-      this.chartInstance = new Chartist.Line(divNode, this.data, this.options);
+      this.chartInstance = new Chartist.Bar(node, data, options).on('draw', (value) => {
+        if (value.type === 'bar') {
+          value.element.attr({
+            style: 'stroke-width: 70px',
+          });
+        }
+      });
     }
   },
 
