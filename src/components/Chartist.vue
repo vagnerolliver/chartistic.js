@@ -1,8 +1,5 @@
 <template>
   <div class="home">
-    <h2 class="font-big">wwr</h2>
-    <h3 class="font-green">verde</h3>
-    <h4 class="bg-black">class $bg-black</h4>
     <div class="ct-chart" ref="chartNode"></div>
   </div>
 </template>
@@ -43,10 +40,5 @@ export default {
 
 
 <style lang="scss">
-  //  @import '@/variables.scss';
 
-  // .bg-black {
-  //   background: $bg-black;
-  //   color: #fff;
-  // }
  </style>

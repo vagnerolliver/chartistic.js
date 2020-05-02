@@ -1,7 +1,19 @@
 <template>
   <div class="home">
-      <div class="echarts">sss</div>
-    <Chartist :data="data" :options="options" />
+    <div class="header">
+      <h1>Graphic chartist.js</h1>
+
+      <a href="https://github.com/gionkunz/chartist-js">
+        https://github.com/gionkunz/chartist-js
+      </a>
+
+      <b class="color-orange">stars 12.1k</b>
+    </div>
+
+    <div class="content">
+      <div class="column"></div>
+      <div class="column"><Chartist :data="data" :options="options" /></div>
+    </div>
   </div>
 </template>
 
@@ -41,11 +53,17 @@ export default {
 
 
 <style lang="scss">
- $var: red;
+  .content {
+    max-width: 1286px;
+    margin: 10% auto;
+    display: flex;
 
- .echarts {
-    width: 100%;
-    height: 100%;
-    background: $var
+    .column {
+      width: 50%;
+    }
+  }
+
+  .color-orange {
+    color: orange
   }
 </style>
